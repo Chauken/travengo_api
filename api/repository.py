@@ -90,7 +90,8 @@ class TravelPackageRepository:
     
     def save_travel_packages(self, travel_packages: List[TravelPackage], 
                             user_id: Optional[str] = None,
-                            session_id: Optional[str] = None) -> str:
+                            session_id: Optional[str] = None,
+                            message: Optional[str] = None) -> str:
         """
         Save travel packages to history
         
@@ -175,7 +176,8 @@ class TravelPackageRepository:
             history_entry = TravelPackageHistory(
                 travel_packages=travel_packages,
                 user_id=user_id,
-                session_id=session_id
+                session_id=session_id,
+                message=message
             )
             
             # Convert to dict for storage

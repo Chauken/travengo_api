@@ -1,8 +1,8 @@
 {
   "history": [
     {
-      "history_id": "20250802190359",
-      "timestamp": "2025-08-02T19:03:59.859843",
+      "history_id": "20250802205341",
+      "timestamp": "2025-08-02T20:53:41.716529",
       "travel_packages": [
         {
           "package_id": 1,
@@ -16,6 +16,19 @@
             "arrival_time": null,
             "departure_datetime": "2025-01-11T07:10:00Z",
             "arrival_datetime": "2025-01-11T08:15:00Z",
+            "price_economy": 56.0,
+            "price_business": 140.0
+          },
+          "inbound_flight": {
+            "id": "688deabd14f614902dd2c83d",
+            "airline": "AF",
+            "flight_number": "AF873",
+            "departure_airport": "CDG",
+            "arrival_airport": "FRA",
+            "departure_time": null,
+            "arrival_time": null,
+            "departure_datetime": "2025-01-18T10:20:00Z",
+            "arrival_datetime": "2025-01-18T11:25:00Z",
             "price_economy": 56.0,
             "price_business": 140.0
           },
@@ -39,353 +52,11 @@
               "rating": 4.5
             }
           ],
-          "total_package_price": 562.0
-        },
-        {
-          "package_id": 2,
-          "outbound_flight": {
-            "id": "688deabf14f614902dd3a068",
-            "airline": "AF",
-            "flight_number": "AF6483",
-            "departure_airport": "FRA",
-            "arrival_airport": "CDG",
-            "departure_time": null,
-            "arrival_time": null,
-            "departure_datetime": "2025-01-16T08:35:00Z",
-            "arrival_datetime": "2025-01-16T09:40:00Z",
-            "price_economy": 98.0,
-            "price_business": 245.0
-          },
-          "hotel": {
-            "code": "1009459",
-            "name": "Doisy Etoile",
-            "rating": 4,
-            "city": "Paris",
-            "country": "France",
-            "address": "55 Avenue des Ternes 75017 Paris",
-            "price_per_night": 203.0
-          },
-          "activities": [
-            {
-              "id": "29482",
-              "name": "Historic Site Tour",
-              "category": "Cultural",
-              "description": "Unforgettable adventure that creates lasting memories of your trip.",
-              "price": 32.0,
-              "duration_hours": 8.0,
-              "rating": 4.5
-            }
-          ],
-          "total_package_price": 636.0
+          "total_package_price": 614.0
         }
       ],
       "user_id": null,
-      "session_id": "75ae90b0a7084b588eecc2d5c998ecfe"
-    },
-    {
-      "history_id": "20250802190655",
-      "timestamp": "2025-08-02T19:06:55.065844",
-      "travel_packages": [
-        {
-          "package_id": 1,
-          "outbound_flight": {
-            "id": "N/A",
-            "airline": "Recommendation Needed",
-            "flight_number": "N/A",
-            "departure_airport": "SOF",
-            "arrival_airport": "BER",
-            "departure_time": null,
-            "arrival_time": null,
-            "departure_datetime": "N/A",
-            "arrival_datetime": "N/A",
-            "price_economy": 0.0,
-            "price_business": 0.0
-          },
-          "hotel": {
-            "code": "1010755",
-            "name": "Hotel Sch\u00f6neberg",
-            "rating": 3,
-            "city": "Berlin",
-            "country": "Germany",
-            "address": "Hauptstr. 135 10827 BerlinSch\u00f6neberg",
-            "price_per_night": 160.0
-          },
-          "activities": [],
-          "total_package_price": 0.0
-        },
-        {
-          "package_id": 2,
-          "outbound_flight": {
-            "id": "RECOMMEND-STH-BER-002",
-            "airline": "Recommendation Needed",
-            "flight_number": "N/A",
-            "departure_airport": "ARN",
-            "arrival_airport": "BER",
-            "departure_time": null,
-            "arrival_time": null,
-            "departure_datetime": "2025-01-15T10:00:00Z",
-            "arrival_datetime": "2025-01-15T11:30:00Z",
-            "price_economy": 250.0,
-            "price_business": 450.0
-          },
-          "hotel": {
-            "code": "1011059",
-            "name": "TOP martas Hotel Albrechtshof Berlin",
-            "rating": 3,
-            "city": "Berlin",
-            "country": "Germany",
-            "address": "Albrechtstr. 8 10117 Berlin",
-            "price_per_night": 125.0
-          },
-          "activities": [],
-          "total_package_price": 595.0
-        }
-      ],
-      "user_id": null,
-      "session_id": "01777f1f785d4f9cac03a29c0c5df88b"
-    },
-    {
-      "history_id": "20250802191432",
-      "timestamp": "2025-08-02T19:14:32.891691",
-      "travel_packages": [
-        {
-          "package_id": 1,
-          "outbound_flight": {
-            "id": "688deaba14f614902dd193d9",
-            "airline": "AF",
-            "flight_number": "AF1790",
-            "departure_airport": "ARN",
-            "arrival_airport": "CDG",
-            "departure_time": null,
-            "arrival_time": null,
-            "departure_datetime": "2025-01-12T05:20:00Z",
-            "arrival_datetime": "2025-01-12T07:45:00Z",
-            "price_economy": 88.0,
-            "price_business": 220.0
-          },
-          "hotel": {
-            "code": "1005028",
-            "name": "Citadines Bastille Marais Paris",
-            "rating": 3,
-            "city": "Paris",
-            "country": "France",
-            "address": "37 Boulevard Richard Lenoir 75011 Paris",
-            "price_per_night": 132.0
-          },
-          "activities": [
-            {
-              "id": "29482",
-              "name": "Historic Site Tour",
-              "category": "Cultural",
-              "description": "Unforgettable adventure that creates lasting memories of your trip.",
-              "price": 32.0,
-              "duration_hours": 3.0,
-              "rating": 4.5
-            }
-          ],
-          "total_package_price": 443.0
-        },
-        {
-          "package_id": 2,
-          "outbound_flight": {
-            "id": "688deaba14f614902dd193dc",
-            "airline": "AF",
-            "flight_number": "AF8690",
-            "departure_airport": "ARN",
-            "arrival_airport": "CDG",
-            "departure_time": null,
-            "arrival_time": null,
-            "departure_datetime": "2025-01-13T19:25:00Z",
-            "arrival_datetime": "2025-01-13T21:50:00Z",
-            "price_economy": 101.0,
-            "price_business": 252.0
-          },
-          "hotel": {
-            "code": "1004165",
-            "name": "H\u00f4tel Excelsior Latin",
-            "rating": 3,
-            "city": "Paris",
-            "country": "France",
-            "address": "20 Rue Cujas 75005 Paris",
-            "price_per_night": 168.0
-          },
-          "activities": [
-            {
-              "id": "29482",
-              "name": "Historic Site Tour",
-              "category": "Cultural",
-              "description": "Unforgettable adventure that creates lasting memories of your trip.",
-              "price": 32.0,
-              "duration_hours": 3.0,
-              "rating": 4.5
-            }
-          ],
-          "total_package_price": 501.0
-        }
-      ],
-      "user_id": null,
-      "session_id": "bfc4060592d543aa95d5a86b5c870316"
-    },
-    {
-      "history_id": "20250802192554",
-      "timestamp": "2025-08-02T19:25:54.477583",
-      "travel_packages": [
-        {
-          "package_id": 1,
-          "outbound_flight": {
-            "id": "688deabf14f614902dd3a067",
-            "airline": "Air France",
-            "flight_number": "AF6483",
-            "departure_airport": "FRA",
-            "arrival_airport": "CDG",
-            "departure_time": null,
-            "arrival_time": null,
-            "departure_datetime": "2025-01-16T08:35:00Z",
-            "arrival_datetime": "2025-01-16T09:40:00Z",
-            "price_economy": 98.0,
-            "price_business": 245.0
-          },
-          "hotel": {
-            "code": "1004164",
-            "name": "Eden Opera",
-            "rating": 3,
-            "city": "Paris",
-            "country": "France",
-            "address": "35 Rue Jean Baptiste Pigalle 75009 Paris",
-            "price_per_night": 172.0
-          },
-          "activities": [
-            {
-              "id": "29482",
-              "name": "Historic Site Tour",
-              "category": "Cultural",
-              "description": "Unforgettable adventure that creates lasting memories of your trip.",
-              "price": 32.0,
-              "duration_hours": 8.0,
-              "rating": 4.5
-            }
-          ],
-          "total_package_price": 592.0
-        }
-      ],
-      "user_id": null,
-      "session_id": "bbfd4d65e8565c5db5ea66220f987c01"
-    },
-    {
-      "history_id": "20250802200505",
-      "timestamp": "2025-08-02T20:05:05.852035",
-      "travel_packages": [
-        {
-          "package_id": 1,
-          "outbound_flight": {
-            "id": "688deaba14f614902dd193d9",
-            "airline": "AF",
-            "flight_number": "AF1790",
-            "departure_airport": "ARN",
-            "arrival_airport": "CDG",
-            "departure_time": null,
-            "arrival_time": null,
-            "departure_datetime": "2025-01-12T05:20:00Z",
-            "arrival_datetime": "2025-01-12T07:45:00Z",
-            "price_economy": 88.0,
-            "price_business": 220.0
-          },
-          "inbound_flight": {
-            "id": "688deabc14f614902dd295a7",
-            "airline": "AF",
-            "flight_number": "AF3124",
-            "departure_airport": "CDG",
-            "arrival_airport": "ARN",
-            "departure_time": null,
-            "arrival_time": null,
-            "departure_datetime": "2025-01-16T14:05:00Z",
-            "arrival_datetime": "2025-01-16T16:30:00Z",
-            "price_economy": 91.0,
-            "price_business": 227.0
-          },
-          "hotel": {
-            "code": "1004164",
-            "name": "Eden Opera",
-            "rating": 3,
-            "city": "Paris",
-            "country": "France",
-            "address": "35 Rue Jean Baptiste Pigalle 75009 Paris",
-            "price_per_night": 172.0
-          },
-          "activities": [
-            {
-              "id": "29482",
-              "name": "Historic Site Tour",
-              "category": "Cultural",
-              "description": "Unforgettable adventure that creates lasting memories of your trip.",
-              "price": 32.0,
-              "duration_hours": null,
-              "rating": 4.5
-            }
-          ],
-          "total_package_price": 573.0
-        }
-      ],
-      "user_id": null,
-      "session_id": "db1ef03763bc4c4ca1c0430a7fe1dbe7"
-    },
-    {
-      "history_id": "20250802200911",
-      "timestamp": "2025-08-02T20:09:11.178935",
-      "travel_packages": [
-        {
-          "package_id": 1,
-          "outbound_flight": {
-            "id": "688deaba14f614902dd193d9",
-            "airline": "AF",
-            "flight_number": "AF1790",
-            "departure_airport": "ARN",
-            "arrival_airport": "CDG",
-            "departure_time": null,
-            "arrival_time": null,
-            "departure_datetime": "2025-01-12T05:20:00Z",
-            "arrival_datetime": "2025-01-12T07:45:00Z",
-            "price_economy": 88.0,
-            "price_business": 220.0
-          },
-          "inbound_flight": {
-            "id": "688deabc14f614902dd295a7",
-            "airline": "AF",
-            "flight_number": "AF3124",
-            "departure_airport": "CDG",
-            "arrival_airport": "ARN",
-            "departure_time": null,
-            "arrival_time": null,
-            "departure_datetime": "2025-01-16T14:05:00Z",
-            "arrival_datetime": "2025-01-16T16:30:00Z",
-            "price_economy": 91.0,
-            "price_business": 227.0
-          },
-          "hotel": {
-            "code": "1005028",
-            "name": "Citadines Bastille Marais Paris",
-            "rating": 3,
-            "city": "Paris",
-            "country": "France",
-            "address": "37 Boulevard Richard Lenoir 75011 Paris",
-            "price_per_night": 132.0
-          },
-          "activities": [
-            {
-              "id": "29482",
-              "name": "Historic Site Tour",
-              "category": "Cultural",
-              "description": "Unforgettable adventure that creates lasting memories of your trip.",
-              "price": 32.0,
-              "duration_hours": null,
-              "rating": 4.5
-            }
-          ],
-          "total_package_price": 473.0
-        }
-      ],
-      "user_id": null,
-      "session_id": "e1598b71d2ede13d172da5123a4897d7"
+      "session_id": "7e35bb5d33f5436d88b09e07c7ccd466"
     }
   ]
 }

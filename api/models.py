@@ -51,6 +51,7 @@ class TravelPackage(BaseModel):
 
 class TravelPackagesRequest(BaseModel):
     sessionId: Optional[str] = None
+    message: Optional[str] = None
     travel_packages: Optional[List[TravelPackage]] = None
 
 
@@ -60,6 +61,7 @@ class TravelPackageHistory(BaseModel):
     travel_packages: Optional[List[TravelPackage]] = None
     user_id: Optional[str] = None
     session_id: Optional[str] = None
+    message: Optional[str] = None
 
 
 class TravelPackageHistoryResponse(BaseModel):

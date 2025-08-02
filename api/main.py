@@ -1,4 +1,4 @@
-from fastapi import FastAPI, Query, HTTPException, Depends
+from fastapi import FastAPI, Query, Depends
 from fastapi.middleware.cors import CORSMiddleware
 from typing import Dict, Optional
 import uuid
@@ -80,7 +80,8 @@ def save_travel_packages(
     history_id = repository.save_travel_packages(
         travel_packages=request.travel_packages,
         user_id=user_id,
-        session_id=session_id
+        session_id=session_id,
+        message=request.message
     )
     
     return {
@@ -142,39 +143,25 @@ def get_travel_packages_history_by_session(
         "current_packages": None  # Set to None to avoid validation errors
     }
 
-@app.get("/travel-packages/history/{history_id}", response_model=Dict)
-def get_travel_packages_by_id(
-    history_id: str,
-    repository: TravelPackageRepository = Depends(get_repository)
-):
-    """
-    Get a specific travel package history entry by ID
-    
-    This endpoint returns a specific history entry by ID.
-    """
-    entry = repository.get_history_by_id(history_id)
-    
-    if not entry:
-        raise HTTPException(status_code=404, detail=f"History entry with ID {history_id} not found")
-        
-    return entry
 
-@app.delete("/travel-packages/history/{history_id}", response_model=Dict[str, str])
-def delete_travel_packages_history(
-    history_id: str,
+
+@app.get("/chat/{session_id}", response_model=ChatHistoryResponse)
+def get_chat_history_by_session_id(
+    session_id: str,
     repository: TravelPackageRepository = Depends(get_repository)
 ):
     """
-    Delete a travel package history entry by ID
+    Get chat history by session ID
     
-    This endpoint deletes a specific history entry by ID.
+    This endpoint returns the chat history for a specific session ID from the n8n database.
     """
-    deleted = repository.delete_history(history_id)
+    chat_history = repository.get_chat_history_by_session_id(session_id)
     
-    if not deleted:
-        raise HTTPException(status_code=404, detail=f"History entry with ID {history_id} not found")
-        
-    return {"message": f"History entry with ID {history_id} deleted successfully"}
+    if not chat_history:
+        return {"chat_history": None}
+    
+    # Return the chat history
+    return {"chat_history": chat_history}
 
 if __name__ == "__main__":
     import uvicorn
